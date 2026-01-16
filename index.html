@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jesús Manuel Sierra Santos | Junior Frontend Developer</title>
+  <meta name="description" content="Portafolio de Jesús Manuel Sierra Santos - Junior Frontend Developer. Proyectos en HTML, CSS, JavaScript, C# y CI/CD." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__content">
+      <div>
+        <h1 class="title">Jesús Manuel Sierra Santos</h1>
+        <p class="subtitle">Junior Frontend Developer • Desarrollo de Software (ITLA)</p>
+        <p class="summary">
+          Me enfoco en crear interfaces web claras y funcionales. He trabajado en proyectos académicos y personales con
+          <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> y <strong>C#</strong>, además de prácticas de <strong>CI/CD</strong>.
+        </p>
+
+        <div class="cta">
+          <a class="btn btn--primary" href="#proyectos">Ver proyectos</a>
+          <a class="btn btn--ghost" href="https://github.com/JEBUSUS" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+
+      <div class="card card--mini">
+        <h2 class="card__title">Contacto</h2>
+        <ul class="list">
+          <li><span class="tag">📍</span> RD / USA</li>
+          <li>
+            <span class="tag">💼</span>
+            <a href="https://github.com/JEBUSUS" target="_blank" rel="noopener">github.com/JEBUSUS</a>
+          </li>
+          <!-- Opcional: agrega tu correo real -->
+          <!-- <li><span class="tag">✉️</span> <a href="mailto:tucorreo@ejemplo.com">tucorreo@ejemplo.com</a></li> -->
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section" id="habilidades">
+      <h2 class="section__title">Habilidades</h2>
+
+      <div class="grid grid--3">
+        <div class="card">
+          <h3 class="card__title">Frontend</h3>
+          <p class="card__text">HTML5, CSS3, JavaScript, Bootstrap, Responsive Design</p>
+        </div>
+
+        <div class="card">
+          <h3 class="card__title">Backend / Desktop</h3>
+          <p class="card__text">C#, ASP.NET Core (básico), patrones de diseño (básico)</p>
+        </div>
+
+        <div class="card">
+          <h3 class="card__title">Herramientas</h3>
+          <p class="card__text">Git, GitHub, VS Code, Visual Studio, Selenium (básico), CI/CD (básico)</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="proyectos">
+      <h2 class="section__title">Proyectos destacados</h2>
+
+      <div class="grid grid--2">
+        <article class="card">
+          <h3 class="card__title">TalentHub - Proyecto Final</h3>
+          <p class="card__text">
+            Proyecto académico con enfoque en gestión/seguimiento de empleados (según tu repo).
+            Incluye estructura de proyecto, organización y trabajo en equipo.
+          </p>
+          <div class="card__actions">
+            <a class="link" href="https://github.com/JEBUSUS/TalentHub-ProyectoFinal" target="_blank" rel="noopener">Repositorio →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3 class="card__title">DevOps - Práctica Final</h3>
+          <p class="card__text">
+            Trabajo de CI/CD con GitHub Actions, pruebas y despliegue (según el enfoque de tu práctica).
+          </p>
+          <div class="card__actions">
+            <a class="link" href="https://github.com/JEBUSUS/devops-final-practica" target="_blank" rel="noopener">Repositorio →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3 class="card__title">Práctica CI/CD</h3>
+          <p class="card__text">
+            Implementación y práctica de pipeline CI/CD, automatización y despliegue.
+          </p>
+          <div class="card__actions">
+            <a class="link" href="https://github.com/JEBUSUS/practica-ci-cd" target="_blank" rel="noopener">Repositorio →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3 class="card__title">Prometheus + Grafana</h3>
+          <p class="card__text">
+            Proyecto de monitoreo y métricas con Prometheus y Grafana (según tu repositorio).
+          </p>
+          <div class="card__actions">
+            <a class="link" href="https://github.com/JEBUSUS/prometheus-grafana" target="_blank" rel="noopener">Repositorio →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="cv">
+      <h2 class="section__title">Currículum</h2>
+      <div class="card">
+        <p class="card__text">
+          Si vas a usar esto para Monster, en tu CV puedes poner:
+          <strong>Portafolio:</strong> https://jebusus.github.io • <strong>GitHub:</strong> https://github.com/JEBUSUS
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__content">
+      <p>© <span id="year"></span> Jesús Manuel Sierra Santos</p>
+      <a class="link" href="#top" aria-label="Volver arriba">Subir ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

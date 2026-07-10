@@ -1,124 +1,192 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jesús Manuel Sierra Santos | Junior Frontend Developer</title>
-  <meta name="description" content="Portafolio de Jesús Manuel Sierra Santos - Junior Frontend Developer. Proyectos en HTML, CSS, JavaScript, C# y CI/CD." />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4f1e9">
+  <meta name="description" content="Portafolio de Jesús Manuel Sierra Santos: desarrollo web, automatización QA, DevOps y datos.">
+  <meta property="og:title" content="Jesús Sierra — Desarrollador de Software">
+  <meta property="og:description" content="Proyectos de desarrollo web, QA, DevOps y datos.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jebusus.github.io/">
+  <title>Jesús Sierra — Desarrollador de Software</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-  <header class="header">
-    <div class="container header__content">
-      <div>
-        <h1 class="title">Jesús Manuel Sierra Santos</h1>
-        <p class="subtitle">Junior Frontend Developer • Desarrollo de Software (ITLA)</p>
-        <p class="summary">
-          Me enfoco en crear interfaces web claras y funcionales. He trabajado en proyectos académicos y personales con
-          <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> y <strong>C#</strong>, además de prácticas de <strong>CI/CD</strong>.
-        </p>
-
-        <div class="cta">
-          <a class="btn btn--primary" href="#proyectos">Ver proyectos</a>
-          <a class="btn btn--ghost" href="https://github.com/JEBUSUS" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
-
-      <div class="card card--mini">
-        <h2 class="card__title">Contacto</h2>
-        <ul class="list">
-          <li><span class="tag">📍</span> RD / USA</li>
-          <li>
-            <span class="tag">💼</span>
-            <a href="https://github.com/JEBUSUS" target="_blank" rel="noopener">github.com/JEBUSUS</a>
-          </li>
-          <!-- Opcional: agrega tu correo real -->
-          <!-- <li><span class="tag">✉️</span> <a href="mailto:tucorreo@ejemplo.com">tucorreo@ejemplo.com</a></li> -->
-        </ul>
-      </div>
-    </div>
+<body id="inicio">
+  <header class="site-header shell">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">JS<span>.</span></a>
+    <nav aria-label="Navegación principal">
+      <a href="#proyectos">Proyectos</a>
+      <a href="#perfil">Perfil</a>
+      <button class="share-button" type="button" data-share>Compartir <span aria-hidden="true">↗</span></button>
+    </nav>
   </header>
 
-  <main class="container">
-    <section class="section" id="habilidades">
-      <h2 class="section__title">Habilidades</h2>
+  <main>
+    <section class="hero shell">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Disponible para oportunidades</p>
+        <h1>Diseño y construyo <em>productos que funcionan.</em></h1>
+        <p class="hero-description">
+          Soy <strong>Jesús Sierra</strong>, estudiante de Desarrollo de Software en ITLA. Convierto ideas en experiencias web, pruebas automatizadas e infraestructura reproducible.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-acid" href="#proyectos">Explorar proyectos <span aria-hidden="true">↓</span></a>
+          <a class="underlined-link" href="https://github.com/JEBUSUS" target="_blank" rel="noopener noreferrer">github.com/JEBUSUS <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
 
-      <div class="grid grid--3">
-        <div class="card">
-          <h3 class="card__title">Frontend</h3>
-          <p class="card__text">HTML5, CSS3, JavaScript, Bootstrap, Responsive Design</p>
+      <div class="hero-visual" role="img" aria-label="Resumen profesional de Jesús Sierra">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="profile-card">
+          <div class="profile-top"><span>PROFILE.JSON</span><span class="live">LIVE</span></div>
+          <pre><code><span>{</span>
+  <b>"name"</b>: <i>"Jesús Sierra"</i>,
+  <b>"focus"</b>: [<i>"web"</i>, <i>"QA"</i>, <i>"DevOps"</i>],
+  <b>"based"</b>: <i>"New York City"</i>,
+  <b>"building"</b>: <i>"useful things"</i>
+<span>}</span></code></pre>
+          <div class="profile-bottom"><span>ES / EN</span><span>2026</span></div>
+        </div>
+        <span class="floating-tag tag-one">ASP.NET</span>
+        <span class="floating-tag tag-two">SELENIUM</span>
+        <span class="floating-tag tag-three">DOCKER</span>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div>PRODUCTOS WEB <span>✦</span> AUTOMATIZACIÓN QA <span>✦</span> DEVOPS <span>✦</span> DATOS <span>✦</span> PRODUCTOS WEB <span>✦</span> AUTOMATIZACIÓN QA <span>✦</span> DEVOPS <span>✦</span> DATOS <span>✦</span></div>
+    </div>
+
+    <section class="projects-section" id="proyectos">
+      <div class="shell">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">TRABAJO SELECCIONADO / 01—05</p>
+            <h2>Proyectos con intención.</h2>
+          </div>
+          <p>Del problema al producto: arquitectura, experiencia y calidad pensadas como un solo sistema.</p>
         </div>
 
-        <div class="card">
-          <h3 class="card__title">Backend / Desktop</h3>
-          <p class="card__text">C#, ASP.NET Core (básico), patrones de diseño (básico)</p>
-        </div>
+        <article class="featured-project">
+          <div class="featured-copy">
+            <div class="project-meta"><span>01 / PROYECTO DESTACADO</span><span>GESTIÓN DE RR. HH.</span></div>
+            <h3>TalentHub</h3>
+            <p>Un sistema integral para administrar empleados, nómina, vacaciones y reportes desde una experiencia clara y centralizada.</p>
+            <ul class="tag-list">
+              <li>Empleados</li><li>Nómina</li><li>Vacaciones</li><li>Reportes</li>
+            </ul>
+            <a class="button button-dark" href="https://github.com/JEBUSUS/TalentHub-ProyectoFinal" target="_blank" rel="noopener noreferrer">Ver repositorio <span aria-hidden="true">↗</span></a>
+          </div>
 
-        <div class="card">
-          <h3 class="card__title">Herramientas</h3>
-          <p class="card__text">Git, GitHub, VS Code, Visual Studio, Selenium (básico), CI/CD (básico)</p>
+          <div class="talenthub-preview" role="img" aria-label="Vista conceptual del panel de TalentHub">
+            <div class="window-bar"><span></span><span></span><span></span><p>talenthub / dashboard</p></div>
+            <div class="mock-app">
+              <aside><strong>T<span>H</span></strong><i class="active"></i><i></i><i></i><i></i></aside>
+              <div class="mock-content">
+                <div class="mock-title"><div><small>BUENOS DÍAS</small><b>Panel general</b></div><span>JS</span></div>
+                <div class="mock-stats">
+                  <div><small>EMPLEADOS</small><b>128</b><em>+8%</em></div>
+                  <div><small>VACACIONES</small><b>12</b><em>Este mes</em></div>
+                  <div><small>NÓMINA</small><b>Lista</b><em>Procesada</em></div>
+                </div>
+                <div class="mock-bottom">
+                  <div class="chart-card"><small>CRECIMIENTO DEL EQUIPO</small><div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+                  <div class="people-card"><small>EQUIPO RECIENTE</small><p><b>AM</b><i></i></p><p><b>JR</b><i></i></p><p><b>LC</b><i></i></p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <a class="project-card coral" href="https://github.com/JEBUSUS/devops-final-practica" target="_blank" rel="noopener noreferrer">
+            <div class="project-card-top"><span>02 / DEVOPS</span><span class="project-arrow">↗</span></div>
+            <div><h3>DevOps: práctica final</h3><p>Automatización de integración, pruebas y despliegue para entregar cambios de forma repetible y confiable.</p></div>
+            <ul class="tag-list"><li>CI/CD</li><li>GitHub Actions</li><li>Automatización</li></ul>
+          </a>
+
+          <a class="project-card blue" href="https://github.com/JEBUSUS/practica-ci-cd" target="_blank" rel="noopener noreferrer">
+            <div class="project-card-top"><span>03 / CONTINUOUS DELIVERY</span><span class="project-arrow">↗</span></div>
+            <div><h3>Práctica CI/CD</h3><p>Implementación de pipelines para validar y publicar software con un flujo de trabajo consistente.</p></div>
+            <ul class="tag-list"><li>Pipelines</li><li>Deploy</li><li>Git</li></ul>
+          </a>
+
+          <a class="project-card violet" href="https://github.com/JEBUSUS/monitoring-prometheus-grafana" target="_blank" rel="noopener noreferrer">
+            <div class="project-card-top"><span>04 / OBSERVABILIDAD</span><span class="project-arrow">↗</span></div>
+            <div><h3>Monitoreo de infraestructura</h3><p>Entorno reproducible para visualizar métricas y entender el estado de servicios con Prometheus y Grafana.</p></div>
+            <ul class="tag-list"><li>Docker</li><li>Prometheus</li><li>Grafana</li></ul>
+          </a>
+
+          <a class="project-card amber" href="https://github.com/JEBUSUS/ansible-nginx-lab" target="_blank" rel="noopener noreferrer">
+            <div class="project-card-top"><span>05 / INFRAESTRUCTURA</span><span class="project-arrow">↗</span></div>
+            <div><h3>Ansible + Nginx Lab</h3><p>Laboratorio para automatizar la configuración de servidores y desplegar Nginx de forma declarativa.</p></div>
+            <ul class="tag-list"><li>Ansible</li><li>Nginx</li><li>Linux</li></ul>
+          </a>
         </div>
       </div>
     </section>
 
-    <section class="section" id="proyectos">
-      <h2 class="section__title">Proyectos destacados</h2>
+    <section class="about-section shell" id="perfil">
+      <div class="about-number">JS</div>
+      <div class="about-copy">
+        <p class="section-kicker">PERFIL / JESÚS SIERRA</p>
+        <h2>Curiosidad técnica.<br>Resultado práctico.</h2>
+        <p>Me interesa el punto donde el código resuelve un problema real. Mi trabajo combina desarrollo de software, automatización de pruebas y fundamentos de infraestructura. Aprendo construyendo y documento lo que hago para que otros puedan continuarlo.</p>
+        <div class="skills">
+          <div><span>01</span><strong>Desarrollo web</strong></div>
+          <div><span>02</span><strong>QA automatizado</strong></div>
+          <div><span>03</span><strong>DevOps y datos</strong></div>
+        </div>
+      </div>
+    </section>
 
-      <div class="grid grid--2">
-        <article class="card">
-          <h3 class="card__title">TalentHub - Proyecto Final</h3>
-          <p class="card__text">
-            Proyecto académico con enfoque en gestión y seguimiento de empleados.
-            Incluye estructura de proyecto, organización y trabajo en equipo.
-          </p>
-          <div class="card__actions">
-            <a class="link" href="https://github.com/JEBUSUS/TalentHub-ProyectoFinal" target="_blank" rel="noopener">Repositorio →</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3 class="card__title">DevOps - Práctica Final</h3>
-          <p class="card__text">
-            Trabajo de CI/CD con GitHub Actions, pruebas automatizadas y despliegue.
-          </p>
-          <div class="card__actions">
-            <a class="link" href="https://github.com/JEBUSUS/devops-final-practica" target="_blank" rel="noopener">Repositorio →</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3 class="card__title">Práctica CI/CD</h3>
-          <p class="card__text">
-            Implementación y práctica de pipelines CI/CD, automatización y despliegue.
-          </p>
-          <div class="card__actions">
-            <a class="link" href="https://github.com/JEBUSUS/practica-ci-cd" target="_blank" rel="noopener">Repositorio →</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <h3 class="card__title">Prometheus + Grafana</h3>
-          <p class="card__text">
-            Proyecto de monitoreo y visualización de métricas con Prometheus y Grafana.
-          </p>
-          <div class="card__actions">
-            <a class="link" href="https://github.com/JEBUSUS/prometheus-grafana" target="_blank" rel="noopener">Repositorio →</a>
-          </div>
-        </article>
+    <section class="cta-section">
+      <p>¿TIENES UNA OPORTUNIDAD O UN PROYECTO?</p>
+      <h2>Construyamos algo<br><em>que valga la pena.</em></h2>
+      <div class="cta-actions">
+        <a class="button button-acid" href="https://github.com/JEBUSUS" target="_blank" rel="noopener noreferrer">Contactar por GitHub <span aria-hidden="true">↗</span></a>
+        <button class="underlined-link light" type="button" data-share>Compartir portafolio</button>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer__content">
-      <p>© <span id="year"></span> Jesús Manuel Sierra Santos</p>
-      <a class="link" href="#top" aria-label="Volver arriba">Subir ↑</a>
-    </div>
+  <footer class="site-footer shell">
+    <a class="brand" href="#inicio">JS<span>.</span></a>
+    <p>© <span id="year"></span> Jesús Manuel Sierra Santos · New York City</p>
+    <a href="https://github.com/JEBUSUS" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
   </footer>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    document.querySelectorAll("[data-share]").forEach((button) => {
+      button.addEventListener("click", async () => {
+        const shareData = {
+          title: "Portafolio de Jesús Sierra",
+          text: "Conoce los proyectos de software, QA y DevOps de Jesús Sierra.",
+          url: window.location.href
+        };
+
+        try {
+          if (navigator.share) {
+            await navigator.share(shareData);
+          } else {
+            await navigator.clipboard.writeText(window.location.href);
+            const previousText = button.innerHTML;
+            button.textContent = "Enlace copiado";
+            setTimeout(() => { button.innerHTML = previousText; }, 2200);
+          }
+        } catch (error) {
+          if (error.name !== "AbortError") console.error("No se pudo compartir el enlace.");
+        }
+      });
+    });
   </script>
 </body>
 </html>
